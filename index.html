@@ -1,27 +1,256 @@
-<!DOCTYPE html><html lang=""><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Bodylight.js · Simulators for the modern web</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="Simulators for the modern web"/><meta property="og:title" content="Bodylight.js · Simulators for the modern web"/><meta property="og:type" content="website"/><meta property="og:url" content="http://bodylight.physiome.cz//"/><meta property="og:description" content="Simulators for the modern web"/><meta name="twitter:card" content="summary"/><link rel="shortcut icon" href="/img/favicon.png"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><script>
-              (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-              (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-              })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Bodylight.js 2.0</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--script src="scripts/bodylight.bundle.js" data-main="aurelia-bootstrapper"></script-->
+    <!--script src="https://cdn.jsdelivr.net/npm/bodylight-components/dist/bodylight.bundle.js" data-main="aurelia-bootstrapper"></script-->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
-              ga('create', 'UA-68541769-3', 'auto');
-              ga('send', 'pageview');
-            </script><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="/js/scrollSpy.js"></script><link rel="stylesheet" href="/css/main.css"/><script src="/js/codetabs.js"></script></head><body><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/"><img class="logo" src="/img/bodylight_logo.svg" alt="Bodylight.js"/><h2 class="headerTitleWithLogo">Bodylight.js</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class=""><a href="/docs/introduction" target="_self">Docs</a></li><li class=""><a href="https://github.com/creative-connections" target="_self">GitHub</a></li></ul></nav></div></header></div></div><div class="navPusher"><div><div class="homeContainer"><div class="homeSplashFade"><div class="wrapper homeWrapper"><div class="projectLogo"><img src="/img/bodylight_logo.svg" alt="Bodylight.js logo"/></div><div class="inner"><h2 class="projectTitle">Bodylight.js<small>Simulators for the modern web</small></h2><div class="section promoSection"><div class="promoRow"><div class="pluginRowBlock">  
-    <div class="pluginWrapper buttonWrapper"><a class="button" href="/bodylight.js/docs/introduction">Getting started</a></div>
-  <div class="pluginWrapper buttonWrapper"><a class="button" href="composer/">Composer</a></div>
-  <div class="pluginWrapper buttonWrapper"><a class="button" href="/Bodylight-docs">Bodylight js<sup>2.0</sup>Docs</a></div>
-  <div class="pluginWrapper buttonWrapper"><a class="button" href="Bodylight-Scenarios/">Scenarios</a></div>
-  <div class="pluginWrapper buttonWrapper"><a class="button" href="Bodylight-VirtualBody/">Virtual Body</a></div>
-  </div></div></div></div></div></div></div><div class="mainContainer"><div class="container paddingBottom paddingTop"><div class="wrapper"><div class="gridBlock"><div class="blockElement alignCenter fourByGridBlock imageAlignTop"><div class="blockImage"><img src="/img/ModelicaLogo.svg"/></div><div class="blockContent"><h2><div><span><p>Powered by Modelica</p>
-</span></div></h2><div><span><p>Write models using the Modelica language.</p>
-</span></div></div></div><div class="blockElement alignCenter fourByGridBlock imageAlignTop"><div class="blockImage"><img src="/img/web-assembly-logo.svg"/></div><div class="blockContent"><h2><div><span><p>Executed in WebAssembly</p>
-</span></div></h2><div><span><p>Bringing near native speed for models to the browser.</p>
-</span></div></div></div><div class="blockElement alignCenter fourByGridBlock imageAlignTop"><div class="blockImage"><img src="/img/easeljs-logo-horizontal-gray-darker.svg"/></div><div class="blockContent"><h2><div><span><p>Designed in Adobe® Animate</p>
-</span></div></h2><div><span><p>Create complex animations in Adobe® Animate and export them to Easel.js</p>
-</span></div></div></div></div></div></div><div class="container lightBackground paddingBottom paddingTop"><div class="wrapper"><div class="gridBlock"><div class="blockElement alignCenter imageAlignSide imageAlignLeft twoByGridBlock"><div class="blockImage"><img src="/img/composer.png"/></div><div class="blockContent"><h2><div><span><p>Bodylight.js Composer</p>
-  </span></div></h2><div><span><p>Composer is the main product of the Bodylight.js<sup>1.0</sup>,
-it allows you to visually create an HTML simulator. We are using
-the wonderful project GrapesJS to provide the layouting engine,
-Adobe® Animate to create interactive animations and Modelica
-to make it all run on models your write yourself.</p>  
-</span></div></div></div></div></div></div><div class="productShowcaseSection paddingBottom" style="text-align:center"><h2>Simple simulator of a bouncing ball</h2><p>Bodylight.js Composer is a visual editor for creating in-browser dynamic applications and visualizations.</p><iframe class="titlevideo" src="https://www.youtube-nocookie.com/embed/lm_2BVQJjAQ" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe><h2>Nephron simulator</h2><p>One of the first simulators we developed was a simulator of the Nephron, you can try it for yourself <a href="http://www.physiome.cz/apps/Nephron/">here</a></p><a href="http://www.physiome.cz/apps/Nephron/"><img class="titleimg" src="/img/nephron.png" alt="Nephron simulator"/></a></div></div></div><footer class="nav-footer" id="footer"><section class="copyright">Copyright © 2019 Creative Connections s.r.o.</section></footer></div></body></html>
+  </head>
+  <body aurelia-app="webcomponents">
+      <header class="w3-bar" style="position: sticky;top: 0;background:#4a4a4a;color:white;">
+        <a href="/" class="w3-bar-item w3-button"><img style="width:10%" src="img/bodylight_logo.svg" alt="Bodylight.js">Bodylight.js</a>
+        <a class="w3-bar-item w3-button w3-right" href="/Bodylight-docs/" target="_self">Docs</a>
+        <a class="w3-bar-item w3-button w3-right" href="https://github.com/creative-connections" target="_self">GitHub</a>
+      </header>
+
+      <h1 class="w3-center">Bodylight.js <sup title="Bodylight.js version 2.0">2.0</sup></h1>
+      <h3 class="w3-center">Simulators for the modern web</h3>
+
+    <div class="w3-center w3-padding">
+      <span class="w3-large">Tools:</span>
+    <a href="/Bodylight-docs/tutorial/" class="w3-button w3-border">Tutorial</a>
+
+    <a href="/Bodylight-docs/reference/" class="w3-button w3-border">Documentation - Reference Guide</a>
+
+    <a href="/Bodylight-Editor/" class="w3-button w3-border">Editor</a>
+
+    <a href="/composer/" title="bodylight composer for older version 1.0" class="w3-button w3-border">Composer<sup>1.0</sup></a>
+
+    </div>
+
+      <div class="w3-center w3-padding">
+        <span class="w3-large">Demos and Results:</span>
+        <a href="/Bodylight-Scenarios/" class="w3-button w3-border" title="Selected education scenarios using simulators of human physiology using Bodylight.js 2.0">Scenarios</a>
+
+        <a href="https://www.physiome.cz/en/apps/" title="Educational simulators using older Bodylight.js 1.0" class="w3-button w3-border">Physiome Apps<sup>1.0</sup></a>
+
+        <a href="/Bodylight-VirtualBody/" title="demo of 3d virtualbody and some simulators" class="w3-button w3-border">VirtualBody<sup>WebGL</sup></a>
+
+        <a href="/VR/breathing/" title="demo of 3D virtualbody with live animation using VR/AR capabilities" class="w3-button w3-border">Virtual Reality - breathing<sup>WebXR</sup></a>
+
+      </div>
+
+    <div style="margin:120px!important">
+    </div>
+
+    <div class="w3-center w3-row-padding">
+
+    <div class="w3-quarter">
+      <div class="w3-card-2 w3-container w3-padding">
+        <img style="width:100%" src="img/modelica_logo.svg" alt="Modelica" />
+        <h3 class="w3-center">Powered by Modelica</h3>
+        Write models using Modelica language.
+      </div>
+    </div>
+
+    <div class="w3-quarter">
+      <div class="w3-card-2 w3-container w3-padding">
+        <img style="width:100%" src="img/web-assembly-logo.svg" alt="WebAssembly" />
+        <h3 class="w3-center">Executed in WebAssembly</h3>
+        Compile models to WebAssembly bringing near native speed of model simulation in browsers.
+      </div>
+    </div>
+
+    <div class="w3-quarter">
+      <div class="w3-card-2 w3-container w3-padding">
+      <img style="width:100%" src="img/createjs-logo.png" alt="Create.js" />
+      <h3 class="w3-center">Designed in Adobe&reg; Animate</h3>
+      Create complex animations in Adobe&reg; Animate and export them to Create.js
+      </div>
+    </div>
+
+
+    <div class="w3-quarter">
+      <div class="w3-card-2 w3-container w3-padding">
+      <img style="width:50%" src="img/web_components_logo.png" alt="Create.js" />
+      <h3 class="w3-center">Distributed as Web Components</h3>
+      Enrich HTML or Markdown with custom elements of Bodylight.js.
+      </div>
+    </div>
+      <div class="w3-clear"></div>
+
+      <div class="w3-quarter">
+        <div class="w3-card-2 w3-container w3-padding">
+          <img style="width:50%" src="img/webgl-logo.svg" alt="WebGL" />
+          <h3 class="w3-center">Ready for WebGL</h3>
+          WebGL API brings powerful 2D and 3D visualisation without plugins into web browser. See demos below bringing simulators into 3D scene.
+          Supported by majority of web browsers.
+        </div>
+      </div>
+
+      <div class="w3-quarter">
+        <div class="w3-card-2 w3-container w3-padding">
+          <img style="width:50%" src="img/webxr-logo.svg" alt="WebXR" />
+          <h3 class="w3-center">Ready for WebXR</h3>
+          WebXR API brings virtual reality and augmented reality into web browsers. See demos below bringing simulators in VR/AR.
+          Supported by web browsers in appropriate HW platforms (tested in MS Hololens 2, Oculus Quest 2).
+        </div>
+      </div>
+
+
+    </div>
+
+      <div style="margin:60px!important">
+      </div>
+
+      <div class="w3-border w3-container w3-margin w3-padding">
+        <div class="w3-row">
+          <div class="w3-third">
+            <a href="https://bodylight.physiome.cz/Bodylight-Scenarios">
+              <img style="width:100%" src="img/Bodylight-Scenarios.png" alt="Bodylight Scenarios">
+            </a>
+          </div>
+          <div class="w3-rest w3-padding">
+            <h3 class="w3-center">Scenarios</h3>
+            Selected scenarios of physiology and pathophysiology: Hemodynamics of cardiovascular system, metabolism of iron, gas transport, ... powered by <a href="http://www.physiolibrary.org/">Physiolibrary</a> and Bodylight.js<sup>2.0</sup> technology
+            in single or multipage web-simulators.
+            See at <a href="https://bodylight.physiome.cz/Bodylight-Scenarios">Bodylight-Scenarios</a>.
+          </div>
+        </div>
+      </div>
+      <div style="margin:60px!important">
+      </div>
+
+      <div class="w3-border w3-container w3-margin w3-padding">
+        <div class="w3-row">
+          <div class="w3-third">
+            <a href="https://bodylight.physiome.cz/Bodylight-VirtualBody">
+              <img style="width:100%" src="img/Bodylight-VirtualBody.png" alt="Bodylight VirtualBody">
+            </a>
+          </div>
+          <div class="w3-rest w3-padding">
+            <h3 class="w3-center">VirtualBody</h3>
+            Demo of interactive 3D visualisation of human body using WebGL standard with 2D panels with selected interactive web simulators.
+            Can be viewed in web browsers (Chrome 88.x, Firefox 86.x, Ms edge 88.x, Safari 14.x) on desktop, tablet or mobile device.
+            Additionally, Text2Speech api is demonstrated for reporting the status of virtual patient.
+            See demo version at <a href="https://bodylight.physiome.cz/Bodylight-VirtualBody">Bodylight-VirtualBody</a>.
+          </div>
+        </div>
+      </div>
+
+      <div style="margin:60px!important">
+        </div>
+
+        <div class="w3-border w3-container w3-margin w3-padding w3-light-grey">
+          <div class="w3-row">
+            <div class="w3-third">
+              <a href="https://bodylight.physiome.cz/Bodylight-Editor">
+                <img style="width:100%" src="img/Bodylight-Editor.png" alt="Bodylight Editor">
+              </a>
+            </div>
+            <div class="w3-rest w3-padding">
+              <h3 class="w3-center">Editor<sup>2.0</sup></h3>
+              Static web application - create a web simulator using Bodylight.js<sup>2.0</sup> components. Web simulator can be written in HTML or Markdown. This Bodylight editor
+              may help to bind model variables and animation objects. Editor uses generic ACE editor with markdown-it renderer with live-preview of
+              web simulators.
+              <ul>
+                <li>Use it at <a href="https://bodylight.physiome.cz/Bodylight-Editor">Bodylight-Editor</a>.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div style="margin:60px!important">
+        </div>
+
+      <div class="w3-border w3-container w3-margin w3-padding">
+        <div class="w3-row">
+          <div class="w3-third">
+            <a href="tutorial/">
+              <img style="width:100%" src="img/Bodylight-Tutorial.png" alt="Bodylight Tutorial">
+            </a>
+          </div>
+          <div class="w3-rest w3-padding">
+            <h3 class="w3-center">Tutorial<sup>2.0</sup></h3>
+            Step by step tutorial to create simple and advanced web simulator from Modelica model source code to functional interactive web simulator using
+            Bodylight toolchain 2.0(Bodylight.js FMU Compiler, Editor, Bodylight.js-Components).
+            Following the tutorial, you will get set of files in HTML,JS and MARKDOWN format ready to be deployed as a static web page.
+          </div>
+        </div>
+      </div>
+
+      <div style="margin:60px!important">
+      </div>
+
+        <div class="w3-border w3-container w3-margin w3-padding w3-light-grey">
+          <div class="w3-row">
+            <div class="w3-third">
+              <a href="https://bodylight.physiome.cz/composer">
+                <img style="width:100%" src="img/Bodylight-Composer.png" alt="Bodylight Composer">
+              </a>
+            </div>
+            <div class="w3-rest w3-padding">
+              <h3 class="w3-center">Composer<sup>1.0</sup></h3>
+              Static web application - create a web simulator using Bodylight.js<sup>1.0</sup> in Composer,
+              It allows you to visually create an HTML/JS/CSS simulator embeded in single HTML file. We are using the wonderful project GrapesJS to provide
+              the layouting engine, Adobe® Animate to create interactive animations and Modelica to make it all run on
+              models you write yourself.
+              <ul>
+                <li>Use it at <a href="https://bodylight.physiome.cz/composer">Bodylight-Composer</a>.</li>
+                <li>Tutorial for Composer at <a href="https://bodylight.physiome.cz/docs/introduction">docs/introduction</a>.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      <div style="margin:60px!important">
+      </div>
+
+      <div class="w3-border w3-container w3-margin w3-padding">
+        <div class="w3-row">
+          <div class="w3-third">
+            <a href="https://www.physiome.cz/en/apps/">
+              <img style="width:100%" src="img/Apps.png" alt="Apps">
+            </a>
+          </div>
+          <div class="w3-rest w3-padding">
+            <h3 class="w3-center">Physiome Apps<sup>1.0</sup></h3>
+            Set of web simulator developed in Bodylight.js<sup>1.0</sup> technology include simple non-pulsatile circulation
+            simulator, Nephron kidney simulator and simulator of Iron Metabolism.
+          </div>
+        </div>
+      </div>
+
+    <div style="margin:60px!important">
+    </div>
+
+      <div class="w3-border w3-container w3-margin w3-padding">
+        <div class="w3-row">
+          <div class="w3-third">
+            <a href="https://bodylight.physiome.cz/index1.0.html">
+              Bodylight.js 1.0
+            </a>
+          </div>
+          <div class="w3-rest w3-padding">
+            Previous version of Bodylight.js framework.
+          </div>
+        </div>
+      </div>
+
+      <div style="margin:60px!important">
+      </div>
+
+    <footer class="w3-bar" style="background:#4a4a4a; color:white;position:relative;z-index:1">
+      <section class="w3-small"><sup>1.0</sup> - Bodylight 1.0 includes Bodylight Composer and set of tutorials and apps. Please cite as:<span class="w3-tiny">Šilar J, Polák D, Mládek A, Ježek F, Kurtz T, DiCarlo S, Živný J, Kofranek J
+Development of In-Browser Simulators for Medical Education: Introduction of a Novel Software Toolchain
+J Med Internet Res 2019;21(7):e14160
+URL: https://www.jmir.org/2019/7/e14160
+DOI: 10.2196/14160</span> </section>
+      <section class="w3-small"><sup>2.0</sup> - Bodylight 2.0 evolves Bodylight 1.0 by web components and tools (editor, virtual machine). Not yet published, you may cite as: <a href="https://doi.org/10.5281/zenodo.4575354"><img src="https://zenodo.org/badge/doi/10.5281/zenodo.4575354.svg" alt="zenodo badge" /></a></section>
+
+      <section class="w3-center">2021 @ Creative Connections, COM-SYS Trade, First Faculty of Medicine - Charles University - Prague</section></footer>
+  </body>
+</html>
