@@ -19,6 +19,19 @@
       <h1 class="w3-center">Bodylight.js <sup title="Bodylight.js version 2.0">2.0</sup></h1>
       <h3 class="w3-center">Simulators for the modern web</h3>
 
+      <div class="w3-center w3-padding">
+        <span class="w3-large">Demos and prototypes:</span>
+        <a href="/Bodylight-Scenarios/" class="w3-button w3-border" title="Selected education scenarios using simulators of human physiology using Bodylight.js 2.0">Scenarios</a>
+
+        <a href="https://www.physiome.cz/en/apps/" title="Educational simulators using older Bodylight.js 1.0" class="w3-button w3-border">Physiome Apps<sup>1.0</sup></a>
+        
+        <a href="http://www.physiome.cz/apps/pvloops/" title="PV loops diagram in Bodylight.js 1.0" class="w3-button w3-border">PV loops<sup>1.0</sup></a>
+
+        <a href="/Bodylight-VirtualBody/" title="demo of 3d virtualbody and some simulators" class="w3-button w3-border">VirtualBody<sup>WebGL</sup></a>
+
+        <a href="/VR/breathing/" title="demo of 3D virtualbody with live animation using VR/AR capabilities" class="w3-button w3-border">Virtual Reality - breathing<sup>WebXR</sup></a>
+
+      </div>
     <div class="w3-center w3-padding">
       <span class="w3-large">Docs:</span>
     <a href="/Bodylight-docs/reference/" class="w3-button w3-border">Documentation - Reference Guide</a>
@@ -33,17 +46,7 @@
 
     </div>
 
-      <div class="w3-center w3-padding">
-        <span class="w3-large">Demos and Results:</span>
-        <a href="/Bodylight-Scenarios/" class="w3-button w3-border" title="Selected education scenarios using simulators of human physiology using Bodylight.js 2.0">Scenarios</a>
 
-        <a href="https://www.physiome.cz/en/apps/" title="Educational simulators using older Bodylight.js 1.0" class="w3-button w3-border">Physiome Apps<sup>1.0</sup></a>
-
-        <a href="/Bodylight-VirtualBody/" title="demo of 3d virtualbody and some simulators" class="w3-button w3-border">VirtualBody<sup>WebGL</sup></a>
-
-        <a href="/VR/breathing/" title="demo of 3D virtualbody with live animation using VR/AR capabilities" class="w3-button w3-border">Virtual Reality - breathing<sup>WebXR</sup></a>
-
-      </div>
 
     <div style="margin:120px!important">
     </div>
@@ -107,7 +110,110 @@
 
       <div style="margin:60px!important">
       </div>
+      
+      <div class="w3-border w3-container w3-margin w3-padding">
+        <div class="w3-row">
+          <div class="w3-third">
+            <a href="https://github.com/creative-connections/Bodylight-VirtualMachine">
+              <img style="width:100%" src="img/virtualbox.png" alt="Bodylight Virtual Machine">
+            </a>
+          </div>
+          <div class="w3-rest w3-padding">
+            <h3 class="w3-center">Bodylight-Virtual Machine</h3>
+            Reference installation of bodylight-tools powered by Virtualbox and VagrantUp.            
+          </div>
+        </div>
+      </div>
+      
+      <div style="margin:60px!important">
+      </div>      
 
+      <div class="w3-border w3-container w3-margin w3-padding">
+        <div class="w3-row">
+          <div class="w3-third">
+            <a href="https://github.com/creative-connections/Bodylight.js-FMU-Compiler">
+              <img style="width:100%" src="Bodylight-docs/img/Compiler_Compilation.png" alt="Bodylight Compiler">
+            </a>
+          </div>
+          <div class="w3-rest w3-padding">
+            <h3 class="w3-center">Bodylight.js-FMU-Compiler</h3>
+           Scripts facilitating compilation of FMU file (with source codes in C of compiled Modelica model and solver) to Javascript with embedded WebAssembly. Such compiled javascript allows to access model simulation via FMI API v 2.0 as specified in FMI standard.
+           
+           Use this compiler in virtual machine or in docker container.            
+          </div>
+        </div>
+      </div>
+      
+      <div style="margin:60px!important">
+      </div>
+      
+        <div class="w3-border w3-container w3-margin w3-padding w3-light-grey">
+          <div class="w3-row">
+            <div class="w3-third">
+              <a href="https://bodylight.physiome.cz/Bodylight-Editor">
+                <img style="width:100%" src="img/Bodylight-Editor.png" alt="Bodylight Editor">
+              </a>
+            </div>
+            <div class="w3-rest w3-padding">
+              <h3 class="w3-center">Editor<sup>2.0</sup></h3>
+              Static web application - create a web simulator using Bodylight.js<sup>2.0</sup> components. Web simulator can be written in HTML or Markdown. This Bodylight editor
+              may help to bind model variables and animation objects. Editor uses generic ACE editor with markdown-it renderer with live-preview of
+              web simulators.
+              <ul>
+                <li>Use it at <a href="https://bodylight.physiome.cz/Bodylight-Editor">Bodylight-Editor</a>.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div style="margin:60px!important">
+        </div>      
+        
+        <div class="w3-border w3-container w3-margin w3-padding w3-light-grey">
+          <div class="w3-row">
+            <div class="w3-third">
+              <a href="https://bodylight.physiome.cz/composer">
+                <img style="width:100%" src="img/Bodylight-Composer.png" alt="Bodylight Composer">
+              </a>
+            </div>
+            <div class="w3-rest w3-padding">
+              <h3 class="w3-center">Composer<sup>1.0</sup></h3>
+              Static web application - create a web simulator using Bodylight.js<sup>1.0</sup> in Composer,
+              It allows you to visually create an HTML/JS/CSS simulator embeded in single HTML file. We are using the wonderful project GrapesJS to provide
+              the layouting engine, Adobe® Animate to create interactive animations and Modelica to make it all run on
+              models you write yourself.
+              <ul>
+                <li>Use it at <a href="https://bodylight.physiome.cz/composer">Bodylight-Composer</a>.</li>
+                <li>Tutorial for Composer at <a href="https://bodylight.physiome.cz/docs/introduction">docs/introduction</a>.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      <div style="margin:60px!important">
+      </div> 
+      
+
+      <div class="w3-border w3-container w3-margin w3-padding">
+        <div class="w3-row">
+          <div class="w3-third">
+            <a href="tutorial/">
+              <img style="width:100%" src="img/Bodylight-Tutorial.png" alt="Bodylight Tutorial">
+            </a>
+          </div>
+          <div class="w3-rest w3-padding">
+            <h3 class="w3-center">Tutorial<sup>2.0</sup></h3>
+            Step by step tutorial to create simple and advanced web simulator from Modelica model source code to functional interactive web simulator using
+            Bodylight toolchain 2.0(Bodylight.js FMU Compiler, Editor, Bodylight.js-Components).
+            Following the tutorial, you will get set of files in HTML,JS and MARKDOWN format ready to be deployed as a static web page.
+          </div>
+        </div>
+      </div>
+
+      <div style="margin:60px!important">
+      </div>
+             
+      
       <div class="w3-border w3-container w3-margin w3-padding">
         <div class="w3-row">
           <div class="w3-third">
@@ -146,70 +252,7 @@
       <div style="margin:60px!important">
         </div>
 
-        <div class="w3-border w3-container w3-margin w3-padding w3-light-grey">
-          <div class="w3-row">
-            <div class="w3-third">
-              <a href="https://bodylight.physiome.cz/Bodylight-Editor">
-                <img style="width:100%" src="img/Bodylight-Editor.png" alt="Bodylight Editor">
-              </a>
-            </div>
-            <div class="w3-rest w3-padding">
-              <h3 class="w3-center">Editor<sup>2.0</sup></h3>
-              Static web application - create a web simulator using Bodylight.js<sup>2.0</sup> components. Web simulator can be written in HTML or Markdown. This Bodylight editor
-              may help to bind model variables and animation objects. Editor uses generic ACE editor with markdown-it renderer with live-preview of
-              web simulators.
-              <ul>
-                <li>Use it at <a href="https://bodylight.physiome.cz/Bodylight-Editor">Bodylight-Editor</a>.</li>
-              </ul>
-            </div>
-          </div>
-        </div>
 
-        <div style="margin:60px!important">
-        </div>
-
-      <div class="w3-border w3-container w3-margin w3-padding">
-        <div class="w3-row">
-          <div class="w3-third">
-            <a href="tutorial/">
-              <img style="width:100%" src="img/Bodylight-Tutorial.png" alt="Bodylight Tutorial">
-            </a>
-          </div>
-          <div class="w3-rest w3-padding">
-            <h3 class="w3-center">Tutorial<sup>2.0</sup></h3>
-            Step by step tutorial to create simple and advanced web simulator from Modelica model source code to functional interactive web simulator using
-            Bodylight toolchain 2.0(Bodylight.js FMU Compiler, Editor, Bodylight.js-Components).
-            Following the tutorial, you will get set of files in HTML,JS and MARKDOWN format ready to be deployed as a static web page.
-          </div>
-        </div>
-      </div>
-
-      <div style="margin:60px!important">
-      </div>
-
-        <div class="w3-border w3-container w3-margin w3-padding w3-light-grey">
-          <div class="w3-row">
-            <div class="w3-third">
-              <a href="https://bodylight.physiome.cz/composer">
-                <img style="width:100%" src="img/Bodylight-Composer.png" alt="Bodylight Composer">
-              </a>
-            </div>
-            <div class="w3-rest w3-padding">
-              <h3 class="w3-center">Composer<sup>1.0</sup></h3>
-              Static web application - create a web simulator using Bodylight.js<sup>1.0</sup> in Composer,
-              It allows you to visually create an HTML/JS/CSS simulator embeded in single HTML file. We are using the wonderful project GrapesJS to provide
-              the layouting engine, Adobe® Animate to create interactive animations and Modelica to make it all run on
-              models you write yourself.
-              <ul>
-                <li>Use it at <a href="https://bodylight.physiome.cz/composer">Bodylight-Composer</a>.</li>
-                <li>Tutorial for Composer at <a href="https://bodylight.physiome.cz/docs/introduction">docs/introduction</a>.</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-      <div style="margin:60px!important">
-      </div>
 
       <div class="w3-border w3-container w3-margin w3-padding">
         <div class="w3-row">
